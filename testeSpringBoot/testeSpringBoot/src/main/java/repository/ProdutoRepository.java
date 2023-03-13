@@ -51,6 +51,7 @@ public class ProdutoRepository {
      * @param id do produto a ser deletado.
      */
     public void deletar(Integer id){
+
         produtos.removeIf(produto -> produto.getId() == id);
     }
 
